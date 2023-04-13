@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Sus, Ape It! - $NOTSUS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+        @media (max-width: 480px) {
+        body {
+        background-image: url("small.jpg");
+        }
+      }
+      @font-face {
+        font-family: "Impostograph";
+        src: url("Impostograph-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "VCR_OSD_MONO_1.001";
+        src: url("VCR_OSD_MONO_1.001.ttf") format("truetype");
+      }
+
+      body {
+        font-family: "VCR_OSD_MONO_1.001", sans-serif;
+        margin: 0;
+        background-image: url("big.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: 6rem;
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-family: "Impostograph", sans-serif;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+        color: #ffffff;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .modern-button {
+        margin: 10px;
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #000000;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .modern-button:hover {
+        background-color: #4d4d4d;
+}
+
+      .button {
+        margin: 10px;
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #ff4500;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #ff6347;
+      }
+
+      .roadmap {
+        margin-top: 50px;
+        text-align: left;
+        color: #ffffff;
+        font-size: 1.25rem;
+      }
+
+      .buy-button {
+        margin-top: 50px;
+        display: inline-block;
+      }
+
+      .chart-button,
+      .telegram-button,
+      .twitter-button {
+        margin: 10px;
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #000000;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .chart-button:hover {
+        background-color: #FF0000;
+      }
+
+      .telegram-button:hover {
+        background-color: #FF0000;
+      }
+
+      .twitter-button:hover {
+        background-color: #FF0000;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .button {
+          font-size: 1rem;
+          padding: 10px 20px;
+          margin: 5px;
+        }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        margin-bottom: 30px;
+      }
+
+      .button {
+        font-size: 0.875rem;
+        padding: 10px 20px;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Not Sus, Ape It!</h1>
+      <p>You heard it right. Ape it now! A fun and community focused coin.</p>
+      <h2 style="font-family: 'Impostograph'; font-size: 2rem;">Roadmap</h2>
+      <div class="roadmap-content" style="font-family: 'VCR_OSD_MONO_1.001', monospace;">
+        <p>Phase 1 - Building Community</p>
+        <ul>
+          <li>Create social media presence</li>
+          <li>Host giveaways to incentivize joining community</li>
+        </ul>
+        <p>Phase 2 - Launching Token</p>
+        <ul>
+          <li>Create Not Sus, Ape It! Token</li>
+          <li>Get token listed on Uniswap and other exchanges</li>
+        </ul>
+        <p>Phase 3 - Expanding Use Cases</p>
+        <ul>
+          <li>Partner with other projects to expand use cases</li>
+          <li>Develop Not Sus, Ape It! ecosystem</li>
+        </ul>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=">
+          <img src="buy.png" alt="Buy" width="443px" height="249px">
+        </a>
+      </div>
+      <div class="buy-button">
+        <button class="chart-button" onclick="openChart()">
+          <i class="fas fa-chart-line"></i> Chart
+        </button>
+        <button class="telegram-button" onclick="joinTelegram()">
+          <i class="fab fa-telegram-plane"></i> Join Telegram
+        </button>
+        <button class="twitter-button" onclick="followTwitter()">
+          <i class="fab fa-twitter"></i> Follow Twitter
+        </button>
+       </div>
+    </div>
+    <script>
+      function openUniswap() {
+        window.open("https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=", "_blank");
+      }
+      
+      function openChart() {
+        window.open("https://dexscreener.com/ethereum/", "_blank");
+      }
+      
+      function joinTelegram() {
+        window.open("https://t.me/NotSusApeIt", "_blank");
+      }
+  
+      function followTwitter() {
+        window.open("https://twitter.com/NotSusApeIt", "_blank");
+      }
+    </script>
+  </body>  
+</html>
